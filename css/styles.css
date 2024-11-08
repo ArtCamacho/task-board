@@ -14,3 +14,30 @@ body {
 .task-card:hover {
   cursor: grab;
 }
+
+/* Task Card Styles */
+.task-card {
+  background-color: #f8d7da; /* Light red for "To Do" */
+  border: 1px solid #f5c6cb;
+  padding: 10px;
+  margin-bottom: 5px;
+  cursor: move;
+}
+
+/* Color transitions on drag */
+.task-card.ui-sortable-helper {
+  opacity: 0.8;
+}
+
+/* Color changes based on lane */
+#to-do .task-card {
+  background-color: #f8d7da; /* Light red */
+}
+
+#in-progress .task-card {
+  background-color: #fff3cd; /* Light yellow */
+}
+
+#done .task-card {
+  background-color: #d4edda; /* Light green */
+}
