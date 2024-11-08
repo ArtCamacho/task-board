@@ -36,15 +36,11 @@ document.addEventListener("DOMContentLoaded", function () {
     `;
     return card;
   }
-  // 2. Example: Add Task Button Functionality
   addTaskButton.addEventListener("click", () => {
-    // 2.1. Get task input from the user (you'll likely use a modal)
     const taskContent = prompt("Enter new task description:");
 
-    // 2.2. Create a new task card element
     const newTaskCard = createTaskCard(taskContent);
 
-    // 2.3. Add the new task card to the "To Do" column
     todoCards.appendChild(newTaskCard);
   });
 
@@ -60,7 +56,6 @@ document.addEventListener("DOMContentLoaded", function () {
     return card;
   }
 
-  // 4. Drag and Drop Logic (using jQuery UI)
   $(function () {
     $(".lane")
       .sortable({
